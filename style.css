@@ -326,3 +326,19 @@ padding: 0 7%;
     transform: scale(1.0); 
 }
     }
+
+    @media screen and (max-width: 403px) 
+    {
+        .pics
+        {
+            display: inline;
+        }
+        .line-1
+        {
+            font-size: 12px;
+        }
+        .header h1 {
+            color: #fff;
+            font-size: 43px;
+        }
+    }
