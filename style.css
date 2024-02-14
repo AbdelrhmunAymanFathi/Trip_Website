@@ -296,8 +296,8 @@ nav .mobile_icon i
     padding: 0 3%
 }
 .pics .content img {
-    width: 12ex;
-    height: 12ex;
+    width: 10ex;
+    height: 10ex;
 }
 .world {
     text-align: center;
@@ -341,4 +341,5 @@ padding: 0 7%;
             color: #fff;
             font-size: 43px;
         }
+    
     }
