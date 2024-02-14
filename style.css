@@ -1,0 +1,328 @@
+body
+{
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    font-family: monospace;
+}
+/* top */
+.top
+{
+    width: 100%;
+    height: 4%;
+    border-bottom:3px solid #1F1E1F ;
+    padding-bottom: 3.3%;
+}
+/* end top */
+
+/* navbar */
+nav
+{
+    padding: 0% 1.5%
+}
+nav .logo h2
+{
+    color:#fff;
+    font-size: 28px;
+}
+
+nav .logo h2 span
+{
+    color: #ddb61b;
+}
+
+.btns
+{
+    display: grid;
+    justify-content: end;
+}
+.btns ul
+{
+    display: flex;
+}
+.btns ul.no-bullets {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    }
+.btns ul li
+{
+    margin: -61px 0% 0 41px;
+}
+ul li a
+{
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+nav .mobile_icon
+{
+    display: none;
+}
+
+/* end nav */
+.mobile_menu
+{
+    display:none;
+    text-align: center;
+    height: 100vh;
+
+}
+.mobile_menu ul li 
+{
+margin: 20% 0;
+}
+/* start  header baK Gr  */
+.header
+{
+    background-image: url(./imgs/Background.png);
+    padding: 7% 0% 7% 5%;
+    background-size: cover;
+    background-repeat: round;
+}
+.header h2
+{
+    color: #ddb61b;
+}
+.header h1
+{
+    color: #fff;
+    font-size: 50px;
+}
+.header h3
+{
+    color:#ffffffc9;
+    font-weight: 100;
+    padding-right:9.4% ;
+
+}
+/*  start text auto */
+.line-1{
+    position: relative;
+    top: 50%;  
+    width: 24em;
+    border-right: 2px solid rgba(255,255,255,.75);
+    font-size: 180%;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    transform: translateY(-50%);    
+}
+
+/* Animation */
+.anim-typewriter{
+  animation: typewriter 4s steps(44) 1s 1 normal both,
+             blinkTextCursor 500ms steps(44) infinite normal;
+}
+@keyframes typewriter{
+  from{width: 0;}
+  to{width: 24em;}
+}
+@keyframes blinkTextCursor{
+  from{border-right-color: rgba(255,255,255,.75);}
+  to{border-right-color: transparent;}
+}
+/* end text auto */
+.btn_book
+{
+    background-color: #ddb61b;
+    color: black;
+    padding: 15px 34px;
+    border: 1px solid #ddb61b;
+    border-radius: 6px;
+    margin-top: 2.5%;
+    transition: all .55s;
+    cursor: pointer;
+}
+.btn_book:hover
+{
+    background-color: #ffffff00;
+    border: 1px solid #fff;
+    color: #fff;
+    z-index: 2;
+    margin-left: 5%;
+}
+
+/* start new section */
+.pics
+{
+    display: flex;
+    justify-content: space-around;
+    padding: 0 7%;
+}
+.pics .content
+{
+    text-align: center;
+
+}
+.pics .content img
+{
+width: 15ex;
+height: 15ex;
+border-radius: 50px;
+transition: transform .5s; /* Animation */
+}
+.pics .content img:hover
+{
+    transform: scale(1.2); 
+}
+.pics .content p
+{
+    color: #fff;
+}
+
+.world{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 8%;
+}
+.world .image
+{
+    transition: transform .5s; /* Animation */
+}
+.world .image:hover
+{
+    transform: scale(1.029); 
+}
+.world .image img
+{
+    width: 80%;
+    height:100%;
+    border-radius: 4%;
+}
+.world .con
+{
+   margin-top: 6%;
+    
+}
+.world .con h2
+{
+    color: #ddb61b;
+    font-weight: 900;
+}
+.world .con h1
+{
+    color: #fff;
+    font-size: 38px;
+}
+.world .con h3
+{
+    color: #ffffffc9;
+    font-weight: 100;
+}
+
+.trips
+{
+    display: flex;
+    margin-top: 10%;
+    position: relative;
+    text-align: center;
+    color: white;
+    padding: 0 5%;
+
+}
+.trips .t 
+{
+    position: relative;
+    transition: transform .5s; /* Animation */
+}
+.trips .t:hover
+{
+    transform: scale(1.15999); 
+}
+.bottom-left {
+    position: absolute;
+    bottom: 5%;
+    left: 12%;
+    text-align: left;
+    font-size: 18px;
+    padding: 10px;
+    }
+   
+
+.trips .t img
+{
+    width: 90%;
+    border-radius: 2%;
+}
+
+footer
+{
+width: 100%;
+margin-top: 1%;
+padding: 1% 0;
+text-align: center;
+background-color: #0D0B0D;
+}
+footer h3{
+    color: #fff;
+}
+
+@media screen and (max-width: 670px) 
+
+    {
+        nav{
+            display: flex;
+            justify-content: space-between;
+        }
+nav .btns
+{
+    display:none;
+}
+nav .mobile_icon
+{
+    display: block;
+    margin-top: 4.8%;
+}
+nav .mobile_icon i
+{
+    font-size: 35px;
+}
+.header 
+{
+    width: 100%;
+    padding: 7% 0% 7% 0%;
+    text-align: center;
+}
+.header h3 {
+    padding: 0 0%;
+}
+.line-1
+{
+    font-size: 16px;
+}
+.pics {
+    padding: 0 3%
+}
+.pics .content img {
+    width: 12ex;
+    height: 12ex;
+}
+.world {
+    text-align: center;
+    display: inline;
+}
+.world .con h3 {
+padding: 0 7%;
+}
+.trips{
+    display: inline;
+}
+.trips .t
+{
+    margin: 3% 0;
+}
+.trips .t:hover
+{
+    transform: scale(1); 
+}
+.world .image:hover
+{
+    transform: scale(1.0); 
+}
+.pics .content img:hover
+{
+    transform: scale(1.0); 
+}
+    }
